@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <%post = Post.find(params[:id])%>
+    <p><%=post.name%> was deleted</p>
+    <%post.destroy%>
+  </body>
+</html>

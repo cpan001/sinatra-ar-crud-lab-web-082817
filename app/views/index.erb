@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Posts</h1>
+
+    <% Post.all.each_with_index do |post, i| %>
+    <h3>Post <%=i+1%></h3>
+    <h3>Post Title: <%=post.name%></h3>
+    <p>Post Content: <%=post.content%></p>
+    <% end %>
+
+
+  </body>
+</html>
